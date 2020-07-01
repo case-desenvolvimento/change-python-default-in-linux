@@ -1,0 +1,35 @@
+==============================================
+#Como instalar e configurar o Python no Linux#
+
+UBUNTU ou DEBIAN: sudo apt install python3
+
+REDHAT ou CENTOS: sudo yum install python3
+
+OPENSUSE: sudo zypper install python3
+
+
+UBUNTU ou DEBIAN: sudo apt install python3-pip
+
+REDHAT ou CENTOS: yum -y install python-pip
+
+OPENSUSE: sudo zypper install python3-pip
+
+INSTALANDO O PIPENV
+$ pip install pipenv
+
+
+
+===========================================================
+#Como alterar a versão default (padrão) do Python no Linux#
+
+
+$ ls -l /usr/bin/python
+lrwxrwxrwx 1 root root 18 abr 29 22:30 /usr/bin/python -> /usr/bin/python2.7
+
+$ sudo ln -sf /usr/bin/python3.6 /usr/bin/python
+
+Para verificar:
+
+$ python -V
+Python 3.6.5
+==========================================================
